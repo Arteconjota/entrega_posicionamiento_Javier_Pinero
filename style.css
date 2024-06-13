@@ -89,8 +89,10 @@ button:hover {
 }
 
 .features {
+  width: 50%;
+  min-width: fit-content;
   border: var(--border);
-  margin: 320px 400px;
+  margin: 320px auto;
   text-align: center;
   padding: 20px 40px;
 }
@@ -110,4 +112,11 @@ footer {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-weight: 600;
+}
+
+@media (max-width: 540px){
+  .content > p {
+    text-align: start;
+    margin-bottom: 20px;
+  }
 }
